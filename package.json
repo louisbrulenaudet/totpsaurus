@@ -1,0 +1,42 @@
+{
+	"name": "totpsaurus",
+	"version": "1.0.2",
+	"description": "Ultralight, non-dependent and minimalist open-source package for generating Time-based One-Time Passwords (TOTPs), creating OTP URLs, and generating secure backup codes for account recovery.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Louis Brulé Naudet <contact@louisbrulenaudet.co,> (https://louisbrulenaudet.com)",
+	"license": "MIT",
+	"url": "https://louisbrulenaudet.com",
+	"email": "contact@louisbrulenaudet.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/louisbrulenaudet/totpsaurus"
+	},
+	"keywords": [
+		"2FA",
+		"crypto",
+		"time-based",
+		"one-time",
+		"password",
+		"auth",
+		"authentication",
+		"google authenticator",
+    "two-factor",
+    "2-factor",
+    "SHA1"
+	],
+	"bugs": "https://louisbrulenaudet.com/contact",
+	"homepage": "https://louisbrulenaudet.com",
+	"funding": [
+		{
+			"type": "Revolut",
+			"url": "https://revolut.me/louisbrulenaudet"
+		},
+		{
+			"type": "Lydia",
+			"url": "https://lydia-app.com/collect/louisbrulenaudet"
+		}
+	]
+}
