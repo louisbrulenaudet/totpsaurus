@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Louis Brulé Naudet <contact@louisbrulenaudet.co,> (https://louisbrulenaudet.com)",
+	"author": "Louis Brulé Naudet <contact@louisbrulenaudet.com> (https://louisbrulenaudet.com)",
 	"license": "MIT",
 	"url": "https://louisbrulenaudet.com",
 	"email": "contact@louisbrulenaudet.com",
