@@ -1,4 +1,4 @@
-# text-normalizer for URL creation
+# Totpsaurus, unleash the Time-Traveling OTPs ⏱️
 
 Ultralight, non-dependent and minimalist open-source package for generating Time-based One-Time Passwords (TOTPs), creating OTP URLs, and generating secure backup codes for account recovery.
 
@@ -43,7 +43,7 @@ If this is a brand new project, make sure to create a `package.json` first with 
 
 ```bash
   npm i totpsaurus
-  yarn install totpsaurus
+  yarn add totpsaurus
 ```
 
 ## Importing
@@ -85,64 +85,56 @@ Import the functions from the package and use them as follows:
 Converts a base32-encoded string to its hexadecimal representation.
 
 #### Parameters
-- `base32` (String): The base32-encoded string to be converted to hexadecimal.
+`base32` (String): The base32-encoded string to be converted to hexadecimal.
 
 #### Returns
-- `Int`: The hexadecimal representation of the input base32 string.
-
----
+`Int`: The hexadecimal representation of the input base32 string.
 
 ### `generateTOTP(secret, algorithm = "sha1")`
 Generates a Time-based One-Time Password (TOTP) using the provided secret.
 
 #### Parameters
-- `secret` (String): The secret key used to generate the TOTP.
-- `algorithm` (String, optional): The hashing algorithm to use for HMAC (e.g., "sha1", "sha256").
+`secret` (String): The secret key used to generate the TOTP.
+`algorithm` (String, optional): The hashing algorithm to use for HMAC (e.g., "sha1", "sha256").
 
 #### Returns
-- `Int`: The generated Time-based One-Time Password.
-
----
+`Int`: The generated Time-based One-Time Password.
 
 ### `randomBase32(length)`
 Generates a random base32-encoded string of the specified length.
 
 #### Parameters
-- `length` (Int): The desired length of the random base32 string.
+`length` (Int): The desired length of the random base32 string.
 
 #### Returns
-- `String`: The randomly generated base32-encoded string.
-
----
+`String`: The randomly generated base32-encoded string.
 
 ### `generateBackupCodes(count, length)`
 Generates a specified number of secure backup codes for TOTP.
 
 #### Parameters
-- `count` (Int): The number of backup codes to generate.
-- `length` (Int): The length of each backup code.
+`count` (Int): The number of backup codes to generate.
+`length` (Int): The length of each backup code.
 
 #### Returns
-- `Array of Strings`: An array containing the generated secure backup codes.
-
----
+`Array of Strings`: An array containing the generated secure backup codes.
 
 ### `generateTOTPURL(secret, username, issuer, algorithm = "SHA1", digits = 6, period = 30, counter = 0, initialTime = 0, window = 1)`
 Generates an OTP (One-Time Password) URL for a given secret and username.
 
 #### Parameters
-- `secret` (String): The secret key used to generate the TOTP, base64-encoded.
-- `username` (String): The username for whom the OTP URL is generated.
-- `issuer` (String): The issuer of the code.
-- `algorithm` (String): The hashing algorithm used for TOTP.
-- `digits` (Int): The number of digits in the generated TOTP.
-- `period` (Int): The time period (in seconds) for TOTP validity.
-- `counter` (Int): The initial counter value for HOTP.
-- `initialTime` (Int): The initial time for TOTP calculations.
-- `window` (Int): The acceptable time window for TOTP validation.
+`secret` (String): The secret key used to generate the TOTP, base64-encoded.
+`username` (String): The username for whom the OTP URL is generated.
+`issuer` (String): The issuer of the code.
+`algorithm` (String): The hashing algorithm used for TOTP.
+`digits` (Int): The number of digits in the generated TOTP.
+`period` (Int): The time period (in seconds) for TOTP validity.
+`counter` (Int): The initial counter value for HOTP.
+`initialTime` (Int): The initial time for TOTP calculations.
+`window` (Int): The acceptable time window for TOTP validation.
 
 #### Returns
-- `String`: An OTP URL in otpauth://totp format.
+`String`: An OTP URL in otpauth://totp format.
 
 ## License
 
